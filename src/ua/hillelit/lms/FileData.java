@@ -27,6 +27,10 @@ public class FileData implements Comparable<FileData> {
     return size;
   }
 
+  public String getName() {
+    return name;
+  }
+
   @Override
   public int compareTo(FileData o) {
     return (int) (size - o.size);
